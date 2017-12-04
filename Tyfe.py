@@ -6,7 +6,7 @@ from multiprocessing import Pool
 import time,random,sys,json,codecs,threading,glob,re,datetime,urllib2,pickle,requests,base64
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="EnMEnp4xeuTUPFUfjMOa.R1+UjDAUJmrKXLmqjUXa2G.bUgsK6NHcrKEdoebRwM6Fk1WtkmBQ2fwQx9xgAHDfbQ=")
 cl.loginResult()
 
 kk = LINETCR.LINE()
@@ -357,7 +357,7 @@ def user1script(op):
                 elif msg.text.lower() == ".tyfelogin":
                     if not TyfeLogged:
                         lgncall = msg.to
-                        kk.login(qr=True,callback=logincall)
+                        ki.login(token="EnSJFSKPRZEYuqzafnW5.wzgpaMkLY8msyyBVU5MNbq.56rqly1h2jCdm63VcQDjcd/WSVVo4IOLmbSB51wt+JQ=")
                         kk.loginResult()
                         user2 = kk.getProfile().mid
                         TyfeLogged = True
