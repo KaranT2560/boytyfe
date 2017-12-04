@@ -293,6 +293,7 @@ def user1script(op):
                     cl.sendText(msg.to,"0.000000007112 วินาที")
                 elif msg.text.lower() == ".speed":
                     start = time.time()
+                    time.sleep(0.001)
                     cl.sendText(msg.to,"กำลังทดสอบ..")
                     elapsed_time = time.time() - start
                     cl.sendText(msg.to, "%s วินาที" % (elapsed_time))
