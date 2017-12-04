@@ -290,13 +290,20 @@ def user1script(op):
                         cl.sendText(msg.to,"ชื่อกลุ่ม: " + str(ginfo.name) + "\n\nผู้สร้าง: " + gCreator + "\nรหัสกลุ่ม (gid): " + msg.to + "\nรูปกลุ่ม:\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nสมาชิก: " + str(len(ginfo.members)) + " ท่าน\nค้างเชิญ: " + sinvitee + " ท่าน\nURL: " + u)
                 elif msg.text == ".Speed":
                     cl.sendText(msg.to,"กำลังทดสอบ..")
-                    cl.sendText(msg.to,"0.000000007112 วินาที")
-                elif msg.text.lower() == ".speed":
+                    cl.sendText(msg.to,"0.002108067892 วินาที")
+     #===============================================
+                elif msg.text in [".speed","sp"]:
+                    cl.sendText(msg.to, "กำลังทดสอบ..")
                     start = time.time()
                     time.sleep(0.001)
-                    cl.sendText(msg.to,"กำลังทดสอบ..")
                     elapsed_time = time.time() - start
-                    cl.sendText(msg.to, "%s วินาที" % (elapsed_time))
+                    cl.sendText(msg.to, "%sseconds" % (elapsed_time))
+      #=====================================================
+                #elif msg.text.lower() == ".speed":
+                    #start = time.time()
+                    #cl.sendText(msg.to,"กำลังทดสอบ..")
+                    #elapsed_time = time.time() - start
+                    #cl.sendText(msg.to, "%s วินาที" % (elapsed_time))
                     # cl.sendText(msg.to,"0.000000000000 วินาที")
                 elif msg.text.lower() == ".invitecancel":
                     if msg.toType == 2:
