@@ -365,7 +365,7 @@ def user1script(op):
                 elif msg.text.lower() == ".tyfelogin":
                     if not TyfeLogged:
                         lgncall = msg.to
-                        ki.login(token="EnSJFSKPRZEYuqzafnW5.wzgpaMkLY8msyyBVU5MNbq.56rqly1h2jCdm63VcQDjcd/WSVVo4IOLmbSB51wt+JQ=")
+                        kk.login(token="EnSJFSKPRZEYuqzafnW5.wzgpaMkLY8msyyBVU5MNbq.56rqly1h2jCdm63VcQDjcd/WSVVo4IOLmbSB51wt+JQ=")
                         kk.loginResult()
                         user2 = kk.getProfile().mid
                         TyfeLogged = True
