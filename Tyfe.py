@@ -721,14 +721,14 @@ def user2script(op):
             group = cl.getGroup(op.param1)
             cb = Message()
             cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName + "ไส่คำต้อนรับตรงนี้นะ" + group.name
+            cb.text = cl.getContact(op.param2).displayName +  "ยินดีต้อนรับสู่กลุ่ม"  + group.name
             cl.sendMessage(cb)
 
         if op.type == 15:
             group = cl.getGroup(op.param1)
             cb = Message()
             cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName + "ไส่คำที่ถึงคนที่ออก" + group.name
+            cb.text = cl.getContact(op.param2).displayName +  "bye มีโอกาสกลับมาใหม่นะ"  + group.name
             cl.sendMessage(cb)         
             #========
         if op.type == 19:
