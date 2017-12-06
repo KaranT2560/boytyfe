@@ -716,6 +716,21 @@ def user2script(op):
                 nowS = datetime.datetime.strftime(now2,"%S")
                 tm = "\n\n"+nowT+":"+nowM+":"+nowS
                 kk.sendText(op.param1,"สมาชิกที่ถูกแบนไม่ได้รับอนุญาตให้เข้าร่วมกลุ่ม （´・ω・｀）"+tm)
+                 #===================
+        if op.type == 17:
+            group = cl.getGroup(op.param1)
+            cb = Message()
+            cb.to = op.param1
+            cb.text = cl.getContact(op.param2).displayName + "ไส่คำต้อนรับตรงนี้นะ" + group.name
+            cl.sendMessage(cb)
+
+        if op.type == 15:
+            group = cl.getGroup(op.param1)
+            cb = Message()
+            cb.to = op.param1
+            cb.text = cl.getContact(op.param2).displayName + "ไส่คำที่ถึงคนที่ออก" + group.name
+            cl.sendMessage(cb)         
+            #========
         if op.type == 19:
             gotkick = op.param3
             kickname = cl.getContact(op.param2).displayName
