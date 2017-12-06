@@ -2235,16 +2235,4 @@ except:
         pickle.dump([seeall,tadmin,banned,kickLockList,autoLikeSetting,creator,save1,wait,botProtect,save2], f)
     print ""
 #==-=============================================
-        if op.type == 15:
-            group = cl.getGroup(op.param1)
-            cb = Message()
-            cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName + "ไส่คำต้อนรับตรงนี้นะ" + group.name
-            cl.sendMessage(cb)
-
-        if op.type == 15:
-            group = cl.getGroup(op.param1)
-            cb = Message()
-            cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName + "ไส่คำที่ถึงคนที่ออก" + group.name
-            cl.sendMessage(cb)
+        
