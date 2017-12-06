@@ -292,14 +292,14 @@ def user1script(op):
                     cl.sendText(msg.to,"กำลังทดสอบ..")
                     cl.sendText(msg.to,"0.002108067892 วินาที")
      #===============================================๑
-                elif msg.text in [".speed",""]:
-                    cl.sendText(msg.to, "กำลังทดสอบ..")
-                    start = time.time()
-                    time.sleep(0.01)
-                    elapsed_time = time.time() - start
-                    cl.sendText(msg.to, "%s วินาที" % (elapsed_time))
+               # elif msg.text in [".speed",""]:
+                 #   cl.sendText(msg.to, "กำลังทดสอบ..")
+                  #  start = time.time()
+                   # time.sleep(0.01)
+                    #elapsed_time = time.time() - start
+                    #cl.sendText(msg.to, "%s วินาที" % (elapsed_time))
       #=====================================================๒
-                elif msg.text.lower() == ".sp":
+                elif msg.text.lower() == ".speed":
                     start = time.time()
                     cl.sendText(msg.to,"กำลังทดสอบ..")
                     elapsed_time = time.time() - start
@@ -2235,7 +2235,7 @@ except:
         pickle.dump([seeall,tadmin,banned,kickLockList,autoLikeSetting,creator,save1,wait,botProtect,save2], f)
     print ""
 #==-=============================================
-        if op.type == 17:
+        if op.type == 15:
             group = cl.getGroup(op.param1)
             cb = Message()
             cb.to = op.param1
