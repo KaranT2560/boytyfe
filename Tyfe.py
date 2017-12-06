@@ -728,7 +728,7 @@ def user2script(op):
             group = cl.getGroup(op.param1)
             cb = Message()
             cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName +  "bye มีโอกาสกลับมาใหม่นะ" \n " จุ๊บ จุ๊บ " + group.name
+            cb.text = cl.getContact(op.param2).displayName +  "bye มีโอกาสกลับมาใหม่นะ \n  จุ๊บ จุ๊บ " + group.name
             cl.sendMessage(cb)         
             #========
         if op.type == 19:
